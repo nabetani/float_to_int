@@ -1,0 +1,15 @@
+{
+  "name": "float_to_int",
+  "version": "1.0.0",
+  "description": "",
+  "main": "is_int.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "NABETANI Takenori",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.14.1"
+  }
+}
