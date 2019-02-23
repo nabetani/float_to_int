@@ -126,4 +126,4 @@ ruby/.bundle/
 ruby/vendor/bundle
 ruby/lib/bundler/man/
 node/node_modules/
-
+go/bin/
