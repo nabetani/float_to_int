@@ -19,6 +19,11 @@ bool is_integer_r(double x) { return std::round(x) == x; }
 
 bool is_integer_t(double x) { return std::trunc(x) == x; }
 
+bool is_integer_modf( double x ){
+  double r;
+  return 0==std::modf(x, &r);
+}
+
 bool is_int_lround(double x) { return std::lround(x) == x; }
 
 bool is_int32(double x) { return static_cast<std::int32_t>(x) == x; }
@@ -38,6 +43,7 @@ bool isint_floor(double x) {
 
 std::vector<f_t> FUNCS{
     f_t{isint_floor, "floor"s},
+    f_t{is_integer_modf, "modf"s},
     f_t{is_int_lround, "lround"s},
     f_t{is_int32, "int32_t"s},
 };
